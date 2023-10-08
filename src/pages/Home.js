@@ -5,6 +5,8 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles({
   App: {
     textAlign: "center",
+    backgroundColor: "#dddddd",
+    height: '100vh'
   },
   AppLogo: {
     height: "40vmin",
