@@ -28,6 +28,12 @@ const useStyles = createUseStyles({
     "&:hover": {
       color: "#fff68f",
     },
+    "&:active": {
+      color: '#fff68f'
+    },
+    "&:focus": {
+      color: '#fff68f'
+    },
     "&:#projectLink": {
       paddingRight: "2vh",
     },
@@ -49,16 +55,19 @@ function Navbar() {
   return (
     <div className={classes.container}>
       <div className={classes.left}>
-        <Link 
-          className={classes.links} 
-          underline="none" 
-          variant="subtitle1">
+        <Link
+          className={classes.links}
+          fontWeight="bold"
+          underline="none"
+          variant="subtitle1"
+        >
           Pojects
         </Link>
         <Link
           className={classes.links}
           underline="none"
           href={resume}
+          fontWeight="bold"
           variant="subtitle1"
           target="_blank"
         >
@@ -66,11 +75,13 @@ function Navbar() {
         </Link>
       </div>
       <div className={classes.name}>
-        <Link 
-          className={classes.links} 
-          underline="none" 
+        <Link
+          color="grey"
+          underline="none"
           variant="h4"
-          href='/'>
+          fontWeight="bold"
+          href="/"
+        >
           Long Nguyen
         </Link>
       </div>
@@ -78,6 +89,7 @@ function Navbar() {
         <Link
           className={classes.links}
           underline="none"
+          fontWeight="bold"
           variant="subtitle1"
           href="/AboutContact"
         >
